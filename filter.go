@@ -13,3 +13,16 @@ func Filter[S ~[]E, E any](list S, f func(E) bool) S {
 
 	return filtered
 }
+
+func FilterInPlace[S ~[]E, E any](list S, keep func(E) bool) S {
+	index := 0
+
+	for i := range list {
+		if keep(list[i]) {
+			list[index] = list[i]
+			index++
+		}
+	}
+
+	return list[:index]
+}

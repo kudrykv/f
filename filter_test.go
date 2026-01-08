@@ -1,9 +1,10 @@
 package f_test
 
 import (
-	"f"
 	"slices"
 	"testing"
+
+	"github.com/kudrykv/f"
 )
 
 func TestFilter(t *testing.T) {

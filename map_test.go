@@ -1,10 +1,11 @@
 package f_test
 
 import (
-	"f"
 	"slices"
 	"strconv"
 	"testing"
+
+	"github.com/kudrykv/f"
 )
 
 func TestMap(t *testing.T) {
